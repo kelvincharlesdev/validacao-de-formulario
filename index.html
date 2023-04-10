@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Validando Formulario</title>
+</head>
+<body>
+
+    <main>
+        <section class="descricao">
+            <h2>FICOU COM DÚVIDA? <br> NOS MANDE UMA MENSAGEM!</h2>
+            <p>caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+        </section>
+
+        <form id="form" class="form">
+
+            <div class="form-content">
+                <input class="campo" id="username" type="text" placeholder="Nome completo *">
+
+                <p class="obrigatorio">msg de erro</p>
+            </div>
+
+            <div class="form-content">
+                <input class="campo" id="email" type="email" placeholder="Email*">
+                <p class="obrigatorio">msg de erro</p>
+            </div>
+
+            <div  class="form-content ">
+                <input class="campo" id="phone" type="number" placeholder="Telefone*">
+                <p class="obrigatorio">msg de erro</p>
+            </div>
+
+            <div class="form-content ">
+                <textarea class="campo" id="message" rows="6" placeholder="Mensagem*"></textarea>
+                <p class="obrigatorio">msg de erro</p>
+            </div>
+
+            <p class="campo-obrigatorio">*campo obrigatório</p>
+
+            <button id="btn" type="submit">Enviar</button>
+        </form>
+    </main>
+
+
+    <script src="src/js/index.js"></script>
+    
+</body>
+</html>

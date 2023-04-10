@@ -1,0 +1,125 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../img/bg-repeat.jpg) ;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+}
+
+
+main .descricao h2{
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.4rem;
+    max-width: 30rem;
+    margin-bottom: 1.1rem;
+    color: #ffffff;
+}
+
+main .descricao p{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    max-width: 30rem;
+    color: #ffffff;
+}
+
+main .form{
+    width: 340px;
+    margin: 1rem;
+    padding: 2.1rem;
+    background-color: #ffffff;
+    
+}
+
+main .form .form-content{
+    margin: 1rem 0;
+}
+
+main .form .form-content input {
+    border:  1px solid #000000;
+    width: 100%;
+    padding-left: 1rem;
+    border-radius: 0.5rem;
+    height: 3.5rem;
+    outline: none;
+    
+}
+
+main .form .form-content #message{
+    width: 100%;
+    max-width: 100%;
+    border:  1px solid #000000;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+
+
+main .form .form-content input::placeholder,
+main .form .form-content #message::placeholder {
+    color:#A8A8A8;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+
+}
+
+main .form .form-content p{
+    font-size: 0.8rem;
+    visibility: hidden;
+}
+
+main .form .campo-obrigatorio{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    color:  #000000;
+
+}
+
+main .form button{
+    margin-top: 2rem;
+    width: 100%;
+    height: 4.1rem;
+    background-color: #3ccc87;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+
+}
+
+main .form .form-content.error input,
+main .form .form-content.error #message{
+    border-color:  #F52E2E;
+    
+}
+
+main .form .form-content.error p{
+    color: #F52E2E;
+    visibility: visible;
+    
+}
+
+main .form .form-content.correct input,
+main .form .form-content.correct #message{
+    border-color:#00C22B;
+    
+}
+
+
+
